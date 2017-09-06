@@ -1,5 +1,6 @@
 package personagens;
 
+import armas.ArmaIF;
 
 public class DragaoAlado extends Personagem implements Voadores{
 
