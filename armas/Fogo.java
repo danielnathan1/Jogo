@@ -2,6 +2,8 @@ package armas;
 
 import java.util.Random;
 
+
+//Fogo implementa de Arma
 public class Fogo implements ArmaIF{
 
 	@Override

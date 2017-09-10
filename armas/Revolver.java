@@ -2,6 +2,8 @@ package armas;
 
 import java.util.Random;
 
+
+//Revolver implementa de Arma
 public class Revolver implements ArmaIF{
 
 	@Override

@@ -2,6 +2,8 @@ package armas;
 
 import java.util.Random;
 
+
+//Magia implementa de Arma
 public class Magia implements ArmaIF {
 
 	@Override

@@ -1,6 +1,6 @@
 package armas;
 
-
+//Bomba implementa de Arma
 public class Bomba implements ArmaIF{
 
 	@Override

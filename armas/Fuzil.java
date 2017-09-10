@@ -2,6 +2,9 @@ package armas;
 
 import java.util.Random;
 
+
+
+// Fuzil implementa de Arma
 public class Fuzil implements ArmaIF{
 
 	@Override

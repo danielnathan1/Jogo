@@ -1,5 +1,7 @@
 package personagens;
 
+
+//Soldado herda de personagem e implementa de faladores e corredores
 public class Soldado extends Personagem implements Faladores, Corredores{
 	
 	

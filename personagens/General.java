@@ -1,5 +1,8 @@
 package personagens;
 
+
+
+//General herda de personagem e implementa de faladores e corredores
 public class General extends Personagem implements Faladores, Corredores{
 
 

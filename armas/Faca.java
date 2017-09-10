@@ -1,7 +1,7 @@
 package armas;
 
 import java.util.Random;
-
+//Faca implementa de Arma
 public class Faca implements ArmaIF{
 
 	@Override

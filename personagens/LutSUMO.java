@@ -1,5 +1,7 @@
 package personagens;
 
+
+//LutSUMO herda de personagem e implementa de faladores e corredores
 public class LutSUMO extends Personagem implements Faladores, Corredores{
 
 	@Override

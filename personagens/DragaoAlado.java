@@ -2,6 +2,8 @@ package personagens;
 
 import armas.ArmaIF;
 
+
+//DragaoAlado herda de Personagem e implementa de voadores
 public class DragaoAlado extends Personagem implements Voadores{
 
 	@Override

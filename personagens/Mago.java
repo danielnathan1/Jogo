@@ -1,6 +1,6 @@
 package personagens;
 
-
+//Mago herda de personagem e implementa de faladores e corredores
 public class Mago extends Personagem implements Faladores , Corredores{
 
 	@Override

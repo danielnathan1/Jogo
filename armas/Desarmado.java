@@ -2,6 +2,7 @@ package armas;
 
 import java.util.Random;
 
+//Desarmado implementa de Arma
 public class Desarmado implements ArmaIF{
 
 	@Override
