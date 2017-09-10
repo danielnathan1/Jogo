@@ -27,7 +27,7 @@ public class UsaPersonagem {
 		ArmaIF arma;
 		
 		String op = "1";
-		String opluta="";
+		int opluta=0;
 		
 		dragao.setArma(arma = new Fogo());
 		
@@ -41,6 +41,7 @@ public class UsaPersonagem {
 								+ "\n[QUALQUER TECLA]-SAIR");
 			op = leitor.nextLine();
 			
+			
 			animacao.carregamento();
 			
 			
@@ -50,6 +51,7 @@ public class UsaPersonagem {
 			
 			personagem.setArma(equip.aramaPer());
 			
+			animacao.sleep();
 			animacao.carregamento();
 			
 			
@@ -58,33 +60,55 @@ public class UsaPersonagem {
 			animacao.carregamento();
 			boss.luta();
 			animacao.dragao();
+			opluta = boss.decisao();
 			
-			while(personagem.getVida()!=0 || dragao.getVida() !=0){
-				opluta = boss.decisao();
+			do{
+				
 			
 				switch (opluta) {
 				
-					case "1":
-						dragao.setVida(personagem.arma());
+					case 1:
+						dragao.setVida(dragao.getVida()-personagem.arma());
 						animacao.sleep();
-						opluta = boss.decisao();
 						break;
 						
-					case "2":
-						
+					case 2:
+						personagem.setArma(equip.aramaPer());
 						
 						break;
 	
 						
 					default:
-						break;
+						System.exit(0);
 				}
-				if(opluta!="2"){
+				
+				
+				if(dragao.getVida() <= 0){
+					boss.bossDerrotado();
+					System.out.println("\n\t\tPARABENS\n\n\n\tVOCE CONSEGUIU PARAR O DRAGAO ALADO");
+					System.exit(0);
+				}
+				
+				if(opluta!=2){
 					boss.baforadaDoDragao();
-					personagem.setVida(dragao.arma());
+					personagem.setVida(personagem.getVida() - dragao.arma());
 				}
+				
+				
+				System.out.println("\n\n VIDA DO DRAGAO: " + dragao.getVida());
+				System.out.println("\n\n SUA VIDA: " + personagem.getVida());
+				
+				
+				if(personagem.getVida() <= 0){
+					System.out.println("\nSUA VIDA CHEGOU A ZERO, VOCE MORREU\n\n\t\tGAME OVER");
+					System.exit(0);
+				}
+				
+				
+				
+				opluta = boss.decisao();
 			
-			}	
+			}while(personagem.getVida()!=0 || dragao.getVida() !=0);	
 		}
 	}
 	

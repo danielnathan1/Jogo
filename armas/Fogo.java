@@ -27,7 +27,7 @@ public class Fogo implements ArmaIF{
 	@Override
 	public void descricao() {
 		System.out.println("\n\n\tFogo do Dragao\ndescricao:De acordo com as lendas o fogo do dragao alado foi aquele que criou o propio sol"
-				+ "certo, \ndano:20-80");
+				+ "\ndano:20-80");
 		
 		
 	}

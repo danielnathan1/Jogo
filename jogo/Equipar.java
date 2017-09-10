@@ -15,7 +15,7 @@ public class Equipar {
 			ArmaIF arma1;
 			
 			
-			System.out.println("\t\t----------------------------------------ARMAS\t\t----------------------------------------");
+			System.out.println("\t\t----------------------------------------ARMAS----------------------------------------");
 			System.out.println("\n\n\n[1]DESARMADO\t\n[2]FACA\n[3]FUZIL\n[4]REVOLVER");
 			
 			String opArma1 = leitor2.nextLine();

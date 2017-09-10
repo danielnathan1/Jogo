@@ -2,9 +2,9 @@ package jogo;
 
 public class Animacao {
 	
-	public void sleep(){
+	public static void sleep(){
 		try {
-			Thread.currentThread().sleep(2000);
+			Thread.currentThread().sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -16,25 +16,24 @@ public class Animacao {
 	
 	public void carregamento(){
 		
-		
 		System.out.println("\t\t----------------------------------------CARREGANDO----------------------------------------");
 		
 		
 		System.out.println("\t\t\t.");
 		try {
-			Thread.currentThread().sleep(1000);
+			Thread.currentThread().sleep(300);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}System.out.println("\t\t\t .");
 		try {
-			Thread.currentThread().sleep(1000);
+			Thread.currentThread().sleep(300);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}System.out.println("\t\t\t  .");
 		try {
-			Thread.currentThread().sleep(1000);
+			Thread.currentThread().sleep(500);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

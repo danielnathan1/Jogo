@@ -47,6 +47,7 @@ public class NovoPersonagem {
 			
 			p.setArma(arma = new Magia());
 			
+			
 			return p;
 			
 		default:
