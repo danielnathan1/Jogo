@@ -28,18 +28,6 @@ public class Jpanels extends JFrame{
 	
 	
 	
-	
-	 /*public void paintComponent(Graphics g) {
-	        super.paintComponent(g);
-	        Dimension dDesktop = this.getSize();
-	        double width = dDesktop.getWidth();
-	        double height = dDesktop.getHeight();
-	        Image background = new ImageIcon(this.image.getScaledInstance(
-	                (int) width, (int) height, 1)).getImage();
-	        g.drawImage(background, 0, 0, this);
-	    }
-	
-	*/
 	public JPanel mudarTela(){
 		
 		//botao iniciar
