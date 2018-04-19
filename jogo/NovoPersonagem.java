@@ -8,45 +8,27 @@ public class NovoPersonagem {
 	
 	public Personagem criarpersoangem(){
 		
-		ArmaIF arma;
 		Personagem p;
 		
 		
 		System.out.println("\nESCOLHA UMA CLASSE"
-				+ "\n[1]SOLDADO\n[2]GENERAL\n[3]LUTADOR DE SUMO\n[4]MAGO\n-");
+				+ "\n[1]MAGO\n[2]GUERREIRO\n\n-");
 		
 		Scanner leitor = new Scanner(System.in);
 		String op = leitor.nextLine();
 		
 		switch (op) {
 		case "1":
-			System.out.println("\nSOLDADO CRIADO!! \n\n\t\t\tHORA DE ESCOLHER UMA ARMA!");
+			System.out.println("\nMAGO CRIADO!! \n\n\t\t\t");
 			
-			p = new Soldado();
+			p = new Mago();
 			
 			return p;
 			
 		case "2":
-			System.out.println("\nGENERAL CRIADO!! \n\n\t\tHORA DE ESCOLHER UMA ARMA!");
+			System.out.println("\nGUERREIRO CRIADO!! \n\n\t\t");
 			
-			p = new General();
-			
-			return p;
-			
-		case "3":
-			System.out.println("\nLUTADOR DE SUMO CRIADO!! \n\n\t\tHORA DE ESCOLHER UMA ARMA!");
-			
-			p = new LutSUMO();
-			
-			return p;
-			
-		case "4":
-			System.out.println("\nMAGO CRIADO!! \n\nOBS:MAGO TEM MAGIA COMO ARMA INICIAL SE QUISER DEIXAR BASTA DIGITAR O NUMERO 00121\n\n\t\tHORA DO JOGO");
-			
-			p= new Mago();
-			
-			p.setArma(arma = new Magia());
-			
+			p = new Guerreiro();
 			
 			return p;
 			

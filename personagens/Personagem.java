@@ -6,8 +6,8 @@ public abstract class Personagem{
 	
 	ArmaIF arma;
 	int vida =100;
+	int mana =100;
 	
-	public abstract void desenhar();
 	
 	public int arma(){
 		return arma.usarArma();
@@ -21,6 +21,14 @@ public abstract class Personagem{
 	}
 	public void setVida(int vida) {
 		this.vida = vida;
+	}
+
+	public int getMana() {
+		return mana;
+	}
+
+	public void setMana(int mana) {
+		this.mana = mana;
 	}
 	
 	

@@ -2,23 +2,22 @@ package armas;
 
 import java.util.Random;
 
-public class Fogo implements ArmaIF{
+public class Espada implements ArmaIF{
 
 	@Override
 	public int usarArma() {
-		int dano=40;
+		int dano=20;
 		
 		Random gerador = new Random();
 		
 		System.out.println("Ataque: FireBall!!");
 		dano*=gerador.nextInt(3);
 		if(dano==0){
-			System.out.println("\n\nMiss");;
+			dano = 10;
 		}
 		System.out.println("\n\n\tDano causado=" + dano);
 		
 		return dano;
-
 	}
 
 	@Override
@@ -26,6 +25,5 @@ public class Fogo implements ArmaIF{
 		// TODO Auto-generated method stub
 		
 	}
-	
 
 }

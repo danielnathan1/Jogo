@@ -1,8 +1,8 @@
 package armas;
 
 import java.util.Random;
-//Faca implementa de Arma
-public class Faca implements ArmaIF{
+
+public class Cajado implements ArmaIF{
 
 	@Override
 	public int usarArma() {
@@ -10,7 +10,7 @@ public class Faca implements ArmaIF{
 		
 		Random gerador = new Random();
 		
-		System.out.println("Faca AK47: a faca perfeita para combate");
+		System.out.println("Ataque: FireBall!!");
 		dano*=gerador.nextInt(7);
 		if(dano==0){
 			dano = 10;
@@ -18,14 +18,12 @@ public class Faca implements ArmaIF{
 		System.out.println("\n\n\tDano causado=" + dano);
 		
 		return dano;
-		
-		
+
 	}
 
 	@Override
 	public void descricao() {
-		System.out.println("\n\n\tFACA\ndescricao:Uma faca bem utilizada pode ser capaz de atingir o ponto"
-				+ "certo, \ndano:10-60 ");
+		System.out.println("\n\nArma usada por aqueles que portam o poder da magia de sillam");
 		
 	}
 
