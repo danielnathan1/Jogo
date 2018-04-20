@@ -11,4 +11,10 @@ public class Guerreiro extends Personagem {
 		this.setArma(espada);
 	}
 
+	@Override
+	public void aprensentacao() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

@@ -11,4 +11,10 @@ public class Mago extends Personagem{
 		this.setArma(cajado);
 	}
 
+	@Override
+	public void aprensentacao() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

@@ -4,11 +4,16 @@ import armas.ArmaIF;
 
 public abstract class Personagem{
 	
-	ArmaIF arma;
-	int vida =100;
-	int mana =100;
+	public ArmaIF arma;
+	public String nome;
+	public int vida =100;
+	public int mana =100;
 	
 	
+	public abstract void aprensentacao();
+		
+
+
 	public int arma(){
 		return arma.usarArma();
 	}
@@ -29,6 +34,14 @@ public abstract class Personagem{
 
 	public void setMana(int mana) {
 		this.mana = mana;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 	

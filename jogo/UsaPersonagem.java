@@ -6,7 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 import armas.*;
 import janelas.Jpanels;
@@ -24,13 +26,60 @@ public class UsaPersonagem {
 		c.setBackground(new Color(173,216,230));
 		c.setLocation(0,0);
 		
-		
+		//paineis para troca de tela
 		Jpanels paineis = new Jpanels();
-		c.add(paineis.mudarTela());
+		c.add(paineis.mudarTelaMenu());
 		
+		//iniciando o frame
 		TelaInicial jtelainicial = new TelaInicial(c);
 		jtelainicial.repaint();
 		jtelainicial.add(c);
+		
+		//personagem que sera criado
+		Personagem personagem;
+		
+		//controle de execução
+		while(paineis.controle != "0"){
+			System.out.println("aqui");
+			
+			
+			switch (paineis.controle) {
+			
+			case "criacaoPerso":
+				System.out.println("aquicriacao");
+				jtelainicial.mudarPanel(c, paineis.mudarTelaCriacaoPerso());
+				jtelainicial.repaint();
+				
+				while(paineis.controle == "criacaoPerso"){
+				System.out.println("ali");
+					if(paineis.classe=="mg"){
+						personagem = new Mago();
+						personagem.setNome(paineis.nomePerso);
+						System.out.println(personagem.getNome());
+						paineis.controle = "Luta";
+						
+						
+					}else if(paineis.classe == "wr"){
+						personagem = new Guerreiro();
+						personagem.setNome(paineis.nomePerso);
+						System.out.println(personagem.getNome());
+						paineis.controle = "Luta";
+					}
+				
+				}
+				break;
+				
+			case "Luta":
+				
+				JOptionPane.showMessageDialog(null, "voce ganhou");
+				
+				break;
+
+			default:
+				break;
+			}
+			
+		}
 		
 		
 		

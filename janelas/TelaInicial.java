@@ -25,11 +25,11 @@ public class TelaInicial extends JFrame{
 		setVisible(true);
 		
 		//
-		setResizable(false);
+		setResizable(true);
 		
 		setLocationRelativeTo(null);
 		//icone
-		ImageIcon icone = new ImageIcon("C:\\Users\\danie\\Documents\\faculdade\\P4\\Java avancado\\Mercado\\src\\interfacegrafica\\imagens\\icone.png");
+		ImageIcon icone = new ImageIcon("C:\\Users\\danie\\Documents\\faculdade\\jogo2.0\\jogo\\jogo\\Imagens\\icone.png");
 		setIconImage(icone.getImage());
 	
 	//	conteiner
