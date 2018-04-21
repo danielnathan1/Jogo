@@ -36,6 +36,7 @@ public class Jpanels extends JFrame{
 	//paineis
 	public JPanel jmenu = new JPanel();
 	public JPanel jcriarPerso = new JPanel();
+	public JPanel jluta = new JPanel();
 	
 	//variavel de controle de troca de telas
 	public String controle = "0";
@@ -262,6 +263,50 @@ public class Jpanels extends JFrame{
 		
 	}
 
-	
+	public JPanel mudarTelaluta(){
+		
+		JButton jbatacar = new JButton("ATACK");
+		jbatacar.setEnabled(true);
+		jbatacar.setBounds(60, 550, 100, 15);
+		
+		
+		
+		JLabel tela = new JLabel();
+		tela.setEnabled(true);
+		tela.setBounds(0, 0, 800, 600);
+		tela.setIcon(new ImageIcon("jogo\\jogo\\Imagens\\tela_luta.jpg"));
+		
+		
+		//gif do dragao
+		JLabel gifdrag = new JLabel();
+		gifdrag.setEnabled(true);
+		gifdrag.setBounds(400, 100, 500, 500);
+		gifdrag.setIcon(new ImageIcon("jogo\\jogo\\Imagens\\drag.gif"));
+		
+		//gif do personagem
+		JLabel gifMago = new JLabel();
+		gifMago.setEnabled(true);
+		gifMago.setBounds(100, 380, 200, 200);
+		gifMago.setIcon(new ImageIcon("jogo\\jogo\\Imagens\\personagens\\luta\\mg.gif"));
+		
+		jluta.setLayout(null);
+		jluta.setBounds(10, 100, 800, 600);
+		jluta.setBackground(new Color(173,216,230));
+		jluta.setLocation(0, 0);
+		//
+		tela.add(gifdrag);
+		tela.add(gifMago);
+		tela.add(jbatacar);
+		
+		
+		
+		//
+		
+		jluta.add(tela);
+		
+		
+		return jluta;
+		
+	}
 	
 }

@@ -10,7 +10,7 @@ public abstract class Personagem{
 	public int mana =100;
 	
 	
-	public abstract void aprensentacao();
+	public abstract void aprensentacao(String nome);
 		
 
 

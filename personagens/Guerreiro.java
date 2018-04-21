@@ -12,7 +12,7 @@ public class Guerreiro extends Personagem {
 	}
 
 	@Override
-	public void aprensentacao() {
+	public void aprensentacao(String nome1) {
 		// TODO Auto-generated method stub
 		
 	}

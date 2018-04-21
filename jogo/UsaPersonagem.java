@@ -55,7 +55,7 @@ public class UsaPersonagem {
 					if(paineis.classe=="mg"){
 						personagem = new Mago();
 						personagem.setNome(paineis.nomePerso);
-						System.out.println(personagem.getNome());
+						personagem.aprensentacao(personagem.getNome());
 						paineis.controle = "Luta";
 						
 						
@@ -70,8 +70,13 @@ public class UsaPersonagem {
 				break;
 				
 			case "Luta":
+				System.out.println("ali, luta");
+				jtelainicial.mudarPanel(c, paineis.mudarTelaluta());
+				jtelainicial.repaint();
+				while(paineis.controle == "Luta"){
+					System.out.println("ali, luta, oh");
+				}
 				
-				JOptionPane.showMessageDialog(null, "voce ganhou");
 				
 				break;
 

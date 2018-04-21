@@ -14,7 +14,7 @@ public class DragaoAlado extends Personagem implements Voadores{
 	}
 
 	@Override
-	public void aprensentacao() {
+	public void aprensentacao(String nome1) {
 		// TODO Auto-generated method stub
 		
 	}

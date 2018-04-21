@@ -25,7 +25,7 @@ public class TelaInicial extends JFrame{
 		setVisible(true);
 		
 		//
-		setResizable(true);
+		setResizable(false);
 		
 		setLocationRelativeTo(null);
 		//icone
